@@ -1,0 +1,41 @@
+{
+  "ChatNode": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "Data": "Hi there!!\\r\\nWould you like to share your name",
+    "ArcList": {
+      "NodeArc": [
+        {
+          "NextNode": {
+            "Data": "Hi #name#.\\r\\nGreat to meet you.\\r\\nFollowing is your email. can you please poovide one?",
+            "ArcList": {
+              "NodeArc": {
+                "NextNode": {
+                  "Data": "Great!!\\r\\nSending a verification email to #email# verify spelling issue.\\r\\nPlease check your mail box ",
+                  "ArcList": {
+                    "NodeArc": {
+                      "NodeText": "Waiting for the mail verificaton.....",
+                      "DisplayType": "TextBox",
+                      "ParameterId": "#WaitForMail#",
+                      "ParameterValue": "#WaitForMail#"
+                    }
+                  }
+                },
+                "NodeText": "email address",
+                "DisplayType": "TextBox",
+                "ParameterId": "email"
+              }
+            }
+          },
+          "NodeText": "name",
+          "DisplayType": "TextBox",
+          "ParameterId": "name"
+        },
+        {
+          "NodeText": "Not at the moment",
+          "DisplayType": "Button"
+        }
+      ]
+    }
+  }
+}
