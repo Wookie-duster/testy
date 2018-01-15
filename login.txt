@@ -10,7 +10,7 @@
     <ArcList>
      <NodeArc>
       <NextNode>
-       <Data>Thank you for registation! email: #email#</Data>
+       <Data>Thank you for registation!</Data>
        <ArcList>
         <NodeArc>
          <NodeText>Finish!</NodeText>
