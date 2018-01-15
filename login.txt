@@ -22,7 +22,7 @@
       <NodeText>email address</NodeText>
       <DisplayType>TextBox</DisplayType>
       <Action>saveUser</Action>
-      <Url>https://maxdata.com/saveUser</Url>
+      <Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
       <ParameterId>email</ParameterId>
      </NodeArc>
     </ArcList>
