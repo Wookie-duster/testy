@@ -42,6 +42,7 @@
                                                 <NodeText>Email address</NodeText>
                         						<DisplayType>TextBox</DisplayType>
                         						<Action>Login</Action>
+                                                <Url>http://maxdata.webmakom.com/storage/?method=login_user</Url>
                         						<ParameterId>email</ParameterId>
                                             </NodeArc>
                                         </ArcList>
@@ -63,8 +64,7 @@
 			<NodeText>Yes, I do!</NodeText>
 			<DisplayType>Button</DisplayType>
 			<Action>Next</Action>
-			<Url>https://cryptomodule.com/createwallet</Url>
-			<ParameterId>name</ParameterId>
+			<ParameterId/>
 		</NodeArc>
 		<NodeArc>
             <NextNode>
@@ -81,6 +81,17 @@
                                         <Data>Thank you for registration!</Data>
                                         <ArcList>
                                             <NodeArc>
+                                                <NextNode>
+                                                    <Data>#Data#</Data>
+                                                    <ArcList>
+                                                        <NodeArc>
+                                                            <NodeText>Try again!</NodeText>
+                                                            <DisplayType>Button</DisplayType>
+                                                            <Action>Restart</Action>
+                                                            <ParameterId />
+                                                        </NodeArc>
+                                                    </ArcList>
+                                                </NextNode>
                                                 <NodeText>Finish!</NodeText>
                                     			<DisplayType>Button</DisplayType>
                                     			<Action>CloseWindow</Action>
@@ -90,7 +101,7 @@
                                     </NextNode>
                                     <NodeText>Email address</NodeText>
             						<DisplayType>TextBox</DisplayType>
-            						<Action>SaveUser</Action>
+            						<Action>Register</Action>
             						<Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
             						<ParameterId>email</ParameterId>
                                 </NodeArc>
@@ -111,7 +122,7 @@
             </NextNode>
 			<NodeText>No, I don't :(</NodeText>
 			<DisplayType>Button</DisplayType>
-			<Action>CloseWindow</Action>
+			<Action>Next</Action>
 			<ParameterId />
 		</NodeArc>
 	</ArcList>
