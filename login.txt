@@ -1,43 +1,118 @@
 <?xml version="1.0"?>
 <ChatNode
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xmlns:xsd="http://www.w3.org/2001/XMLSchema">
- <Data>Hi there!!\r\nWould you like to share your name</Data>
- <ArcList>
-  <NodeArc>
-   <NextNode>
-    <Data>Hi #name#.\r\nGreat to meet you.\r\nFollowing is your email. can you please poovide one? It's private key from your wallet: #key#</Data>
-    <ArcList>
-     <NodeArc>
-      <NextNode>
-       <Data>Thank you for registation!</Data>
-       <ArcList>
-        <NodeArc>
-         <NodeText>Finish!</NodeText>
-         <DisplayType>Button</DisplayType>
-         <Action>CloseWindow</Action>
-        </NodeArc>
-       </ArcList>
-      </NextNode>
-      <NodeText>email address</NodeText>
-      <DisplayType>TextBox</DisplayType>
-      <Action>saveUser</Action>
-      <Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
-      <ParameterId>email</ParameterId>
-     </NodeArc>
-    </ArcList>
-   </NextNode>
-   <NodeText>name</NodeText>
-   <DisplayType>TextBox</DisplayType>
-   <Action>SaveName</Action>
-   <Url>https://cryptomodule.com/createwallet</Url>
-   <ParameterId>name</ParameterId>
-  </NodeArc>
-  <NodeArc>
-   <NodeText>Not at the moment</NodeText>
-   <DisplayType>Button</DisplayType>
-   <Action>CloseWindow</Action>
-   <ParameterId />
-  </NodeArc>
- </ArcList>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Data>Hi there!!\r\nDo you have a wallet?</Data>
+	<ArcList>
+		<NodeArc>
+			<NextNode>
+				<Data>Please enter yor wallet key.</Data>
+				<ArcList>
+					<NodeArc>
+						<NextNode>
+							<Data>Enter your private key.</Data>
+							<ArcList>
+								<NodeArc>
+                                    <NextNode>
+                                        <Data>What's your e-mail address?</Data>
+                                        <ArcList>
+                                            <NodeArc>
+                                                <NextNode>
+                                                    <Data>Success!</Data>
+                                                    <ArcList>
+                                                        <NodeArc>
+                                                            <NextNode>
+                                                                <Data>#Data#</Data>
+                                                                <ArcList>
+                                                                    <NodeArc>
+                                                                        <NodeText>Try again!</NodeText>
+                                                						<DisplayType>Button</DisplayType>
+                                                						<Action>Restart</Action>
+                                                						<ParameterId />
+                                                                    </NodeArc>
+                                                                </ArcList>
+                                                            </NextNode>
+                                                            <NodeText>Finish!</NodeText>
+                                    						<DisplayType>Button</DisplayType>
+                                    						<Action>CloseWindow</Action>
+                                    						<ParameterId />
+                                                        </NodeArc>
+                                                    </ArcList>
+                                                </NextNode>
+                                                <NodeText>Email address</NodeText>
+                        						<DisplayType>TextBox</DisplayType>
+                        						<Action>Login</Action>
+                        						<ParameterId>email</ParameterId>
+                                            </NodeArc>
+                                        </ArcList>
+                                    </NextNode>
+                                    <NodeText>Private key</NodeText>
+            						<DisplayType>TextBox</DisplayType>
+            						<Action>SaveData</Action>
+            						<ParameterId>private</ParameterId>
+								</NodeArc>
+							</ArcList>
+						</NextNode>
+						<NodeText>Wallet address</NodeText>
+						<DisplayType>TextBox</DisplayType>
+						<Action>SaveData</Action>
+						<ParameterId>public</ParameterId>
+					</NodeArc>
+				</ArcList>
+			</NextNode>
+			<NodeText>Yes, I do!</NodeText>
+			<DisplayType>Button</DisplayType>
+			<Action>Next</Action>
+			<Url>https://cryptomodule.com/createwallet</Url>
+			<ParameterId>name</ParameterId>
+		</NodeArc>
+		<NodeArc>
+            <NextNode>
+                <Data>Would you like to create one?</Data>
+                <ArcList>
+                    <NodeArc>
+                        <NextNode>
+                            <Data>
+                                Here is your wallet:\r\n#key#\r\nWhat's your e-mail address?
+                            </Data>
+                            <ArcList>
+                                <NodeArc>
+                                    <NextNode>
+                                        <Data>Thank you for registration!</Data>
+                                        <ArcList>
+                                            <NodeArc>
+                                                <NodeText>Finish!</NodeText>
+                                    			<DisplayType>Button</DisplayType>
+                                    			<Action>CloseWindow</Action>
+                                    			<ParameterId />
+                                            </NodeArc>
+                                        </ArcList>
+                                    </NextNode>
+                                    <NodeText>Email address</NodeText>
+            						<DisplayType>TextBox</DisplayType>
+            						<Action>SaveUser</Action>
+            						<Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
+            						<ParameterId>email</ParameterId>
+                                </NodeArc>
+                            </ArcList>
+                        </NextNode>
+                        <NodeText>Yes! Let's do this!</NodeText>
+            			<DisplayType>Button</DisplayType>
+                        <Action>CreateWallet</Action>
+            			<ParameterId />
+                    </NodeArc>
+                    <NodeArc>
+                        <NodeText>Maybe later!</NodeText>
+            			<DisplayType>Button</DisplayType>
+            			<Action>CloseWindow</Action>
+            			<ParameterId />
+                    </NodeArc>
+                </ArcList>
+            </NextNode>
+			<NodeText>No, I don't :(</NodeText>
+			<DisplayType>Button</DisplayType>
+			<Action>CloseWindow</Action>
+			<ParameterId />
+		</NodeArc>
+	</ArcList>
 </ChatNode>
