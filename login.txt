@@ -41,7 +41,7 @@
                                                 </NextNode>
                                                 <NodeText>Email address</NodeText>
                         						<DisplayType>TextBox</DisplayType>
-                        						<Action>Request</Action>
+                        						<Action>Login</Action>
                                                 <Url>http://maxdata.webmakom.com/storage/?method=login_user</Url>
                         						<ParameterId>email</ParameterId>
                                             </NodeArc>
@@ -101,7 +101,7 @@
                                     </NextNode>
                                     <NodeText>Email address</NodeText>
             						<DisplayType>TextBox</DisplayType>
-            						<Action>Request</Action>
+            						<Action>Register</Action>
             						<Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
             						<ParameterId>email</ParameterId>
                                 </NodeArc>
