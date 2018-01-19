@@ -47,6 +47,7 @@
                                     <DisplayType>Button</DisplayType>
                                     <ParameterId>Wifi</ParameterId>
                                     <ParameterValue>true</ParameterValue>
+                                    <Action>Next</Action>
                                   </NodeArc>
                                   <NodeArc>
                                     <NextNode>
@@ -68,6 +69,7 @@
                                                 </NextNode>
                                                 <NodeText>Yeah, lets go.</NodeText>
                                                 <DisplayType>Button</DisplayType>
+                                                <Action>Next</Action>
                                               </NodeArc>
                                             </ArcList>
                                           </NextNode>
@@ -75,6 +77,7 @@
                                           <DisplayType>Button</DisplayType>
                                           <ParameterId>Wifi</ParameterId>
                                           <ParameterValue>true</ParameterValue>
+                                          <Action>Next</Action>
                                         </NodeArc>
                                         <NodeArc>
                                           <NextNode>
@@ -92,6 +95,7 @@
                                                 </NextNode>
                                                 <NodeText>Sure</NodeText>
                                                 <DisplayType>TextBox</DisplayType>
+                                                <Action>Next</Action>
                                               </NodeArc>
                                             </ArcList>
                                           </NextNode>
@@ -99,6 +103,7 @@
                                           <DisplayType>Button</DisplayType>
                                           <ParameterId>Wifi</ParameterId>
                                           <ParameterValue>false</ParameterValue>
+                                          <Action>Next</Action>
                                         </NodeArc>
                                       </ArcList>
                                     </NextNode>
@@ -106,6 +111,7 @@
                                     <DisplayType>Button</DisplayType>
                                     <ParameterId />
                                     <ParameterValue />
+                                    <Action>Next</Action>
                                   </NodeArc>
                                 </ArcList>
                               </NextNode>
@@ -113,6 +119,7 @@
                               <DisplayType>Button</DisplayType>
                               <ParameterId>DownloadSpeed</ParameterId>
                               <ParameterValue>100</ParameterValue>
+                              <Action>Next</Action>
                             </NodeArc>
                             <NodeArc>
                               <NextNode>
@@ -143,6 +150,7 @@
                         <DisplayType>Button</DisplayType>
                         <ParameterId>UploadSpeed</ParameterId>
                         <ParameterValue>2</ParameterValue>
+                        <Action>Next</Action>
                       </NodeArc>
                       <NodeArc>
                         <NextNode>
@@ -157,6 +165,7 @@
                                     <DisplayType>Button</DisplayType>
                                     <ParameterId>Wifi</ParameterId>
                                     <ParameterValue>false</ParameterValue>
+                                    <Action>CloseWindow</Action>
                                   </NodeArc>
                                   <NodeArc>
                                     <NextNode>
@@ -177,10 +186,12 @@
                                           <NodeText>Lets go</NodeText>
                                           <DisplayType>Button</DisplayType>
                                           <ParameterId />
+                                          <Action>Next</Action>
                                         </NodeArc>
                                         <NodeArc>
                                           <NodeText>Im afraid ill be harrsed....</NodeText>
                                           <DisplayType>Button</DisplayType>
+                                          <Action>CloseWindow</Action>
                                         </NodeArc>
                                       </ArcList>
                                     </NextNode>
@@ -188,6 +199,7 @@
                                     <DisplayType>Button</DisplayType>
                                     <ParameterId>Wifi</ParameterId>
                                     <ParameterValue>true</ParameterValue>
+                                    <Action>Next</Action>
                                   </NodeArc>
                                 </ArcList>
                               </NextNode>
@@ -195,6 +207,7 @@
                               <DisplayType>Button</DisplayType>
                               <ParameterId>DownloadSpeed</ParameterId>
                               <ParameterValue>40</ParameterValue>
+                              <Action>Next</Action>
                             </NodeArc>
                             <NodeArc>
                               <NextNode>
@@ -218,6 +231,7 @@
                               <DisplayType>Button</DisplayType>
                               <ParameterId>DownloadSpeed</ParameterId>
                               <ParameterValue />
+                              <Action>Next</Action>
                             </NodeArc>
                           </ArcList>
                         </NextNode>
@@ -225,34 +239,40 @@
                         <DisplayType>Button</DisplayType>
                         <ParameterId>UploadSpeed</ParameterId>
                         <ParameterValue>2</ParameterValue>
+                        <Action>Next</Action>
                       </NodeArc>
                     </ArcList>
                   </NextNode>
                   <NodeText>Home</NodeText>
                   <DisplayType>Button</DisplayType>
                   <ParameterId>home</ParameterId>
+                  <Action>Next</Action>
                 </NodeArc>
                 <NodeArc>
                   <NodeText>Office</NodeText>
                   <DisplayType>Button</DisplayType>
                   <ParameterId>office</ParameterId>
+                  <Action>Next</Action>
                 </NodeArc>
               </ArcList>
             </NextNode>
             <NodeText>Yes Please!</NodeText>
             <DisplayType>Button</DisplayType>
             <ParameterId>Yes</ParameterId>
+            <Action>Next</Action>
           </NodeArc>
           <NodeArc>
             <NodeText>What is it about?</NodeText>
             <DisplayType>Button</DisplayType>
             <ParameterId>later</ParameterId>
+            <Action>CloseWindow</Action>
           </NodeArc>
         </ArcList>
       </NextNode>
       <NodeText>your name</NodeText>
       <DisplayType>TextBox</DisplayType>
       <ParameterId>name</ParameterId>
+      <Action>Next</Action>
     </NodeArc>
   </ArcList>
 </ChatNode>
