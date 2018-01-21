@@ -6,58 +6,118 @@
 	<ArcList>
 		<NodeArc>
 			<NextNode>
-				<Data>Please enter yor wallet key.</Data>
+				<Data>Have you been registered in our system yet?</Data>
 				<ArcList>
 					<NodeArc>
 						<NextNode>
-							<Data>Enter your private key.</Data>
+							<Data>Great! What's your e-mail address?</Data>
 							<ArcList>
 								<NodeArc>
-                                    <NextNode>
-                                        <Data>What's your e-mail address?</Data>
-                                        <ArcList>
-                                            <NodeArc>
-                                                <NextNode>
-                                                    <Data>Success!</Data>
-                                                    <ArcList>
-                                                        <NodeArc>
-                                                            <NextNode>
-                                                                <Data>#Data#</Data>
-                                                                <ArcList>
-                                                                    <NodeArc>
-                                                                        <NodeText>Try again!</NodeText>
-                                                						<DisplayType>Button</DisplayType>
-                                                						<Action>Restart</Action>
-                                                						<ParameterId />
-                                                                    </NodeArc>
-                                                                </ArcList>
-                                                            </NextNode>
-                                                            <NodeText>Finish!</NodeText>
-                                    						<DisplayType>Button</DisplayType>
-                                    						<Action>CloseWindow</Action>
-                                    						<ParameterId />
-                                                        </NodeArc>
-                                                    </ArcList>
-                                                </NextNode>
-                                                <NodeText>Email address</NodeText>
-                        						<DisplayType>TextBox</DisplayType>
-                        						<Action>Login</Action>
-                                                <Url>http://maxdata.webmakom.com/storage/?method=login_user</Url>
-                        						<ParameterId>email</ParameterId>
-                                            </NodeArc>
-                                        </ArcList>
-                                    </NextNode>
-                                    <NodeText>Private key</NodeText>
-            						<DisplayType>TextBox</DisplayType>
-            						<Action>SaveData</Action>
-            						<ParameterId>private</ParameterId>
+									<NextNode>
+										<Data>Enter your password</Data>
+										<ArcList>
+											<NodeArc>
+												<NextNode>
+													<ArcList>
+														<NodeArc>
+															<NextNode>
+																<Data>#Data#</Data>
+																<ArcList>
+																	<NodeArc>
+																		<NodeText>Try again!</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<Action>Restart</Action>
+																		<ParameterId />
+																	</NodeArc>
+																</ArcList>
+															</NextNode>
+															<NodeText>Finish!</NodeText>
+															<DisplayType>Button</DisplayType>
+															<Action>CloseWindow</Action>
+															<ParameterId />
+														</NodeArc>
+													</ArcList>
+												</NextNode>
+												<NodeText>Password</NodeText>
+												<DisplayType>TextBox</DisplayType>
+												<Action>Login</Action>
+												<Url>http://maxdata.webmakom.com/storage/?method=login_user</Url>
+												<ParameterId>password</ParameterId>
+											</NodeArc>
+										</ArcList>
+									</NextNode>
+									<NodeText>Email</NodeText>
+									<DisplayType>TextBox</DisplayType>
+									<Action>SaveData</Action>
+									<ParameterId>email</ParameterId>
 								</NodeArc>
 							</ArcList>
 						</NextNode>
-						<NodeText>Wallet address</NodeText>
-						<DisplayType>TextBox</DisplayType>
-						<Action>SaveData</Action>
-						<ParameterId>public</ParameterId>
+						<NodeText>Yes</NodeText>
+						<DisplayType>Button</DisplayType>
+						<Action>Next</Action>
+						<ParameterId />
+					</NodeArc>
+					<NodeArc>
+						<NextNode>
+							<Data>Please enter your private key.</Data>
+							<ArcList>
+								<NodeArc>
+									<NextNode>
+										<Data>Great! What's your e-mail address?</Data>
+										<ArcList>
+											<NodeArc>
+												<NextNode>
+													<Data>Enter your password</Data>
+													<ArcList>
+														<NodeArc>
+															<NextNode>
+																<ArcList>
+						                                            <NodeArc>
+						                                                <NextNode>
+						                                                    <Data>#Data#</Data>
+						                                                    <ArcList>
+						                                                        <NodeArc>
+						                                                            <NodeText>Try again!</NodeText>
+						                                                            <DisplayType>Button</DisplayType>
+						                                                            <Action>Restart</Action>
+						                                                            <ParameterId />
+						                                                        </NodeArc>
+						                                                    </ArcList>
+						                                                </NextNode>
+						                                                <NodeText>Finish!</NodeText>
+						                                    			<DisplayType>Button</DisplayType>
+						                                    			<Action>CloseWindow</Action>
+						                                    			<ParameterId />
+						                                            </NodeArc>
+						                                        </ArcList>
+															</NextNode>
+															<NodeText>Password</NodeText>
+															<DisplayType>TextBox</DisplayType>
+															<Action>Register</Action>
+															<Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
+															<ParameterId>password</ParameterId>
+														</NodeArc>
+													</ArcList>
+												</NextNode>
+												<NodeText>Email</NodeText>
+												<DisplayType>TextBox</DisplayType>
+												<Action>SaveData</Action>
+												<ParameterId>email</ParameterId>
+											</NodeArc>
+										</ArcList>
+									</NextNode>
+									<NodeText>Private key</NodeText>
+									<DisplayType>TextBox</DisplayType>
+									<Action>SaveData</Action>
+									<ParameterId>public</ParameterId>
+								</NodeArc>
+							</ArcList>
+						</NextNode>
+						<NodeText>No</NodeText>
+						<DisplayType>Button</DisplayType>
+						<Action>Next</Action>
+						<ParameterId />
 					</NodeArc>
 				</ArcList>
 			</NextNode>
@@ -73,43 +133,54 @@
                     <NodeArc>
                         <NextNode>
                             <Data>
-                                Here is your wallet:\r\n#key#\r\nWhat's your e-mail address?
+                                What's your e-mail address?
                             </Data>
                             <ArcList>
                                 <NodeArc>
                                     <NextNode>
-                                        <Data>Thank you for registration!</Data>
-                                        <ArcList>
-                                            <NodeArc>
-                                                <NextNode>
-                                                    <Data>#Data#</Data>
-                                                    <ArcList>
-                                                        <NodeArc>
-                                                            <NodeText>Try again!</NodeText>
-                                                            <DisplayType>Button</DisplayType>
-                                                            <Action>Restart</Action>
-                                                            <ParameterId />
-                                                        </NodeArc>
-                                                    </ArcList>
-                                                </NextNode>
-                                                <NodeText>Finish!</NodeText>
-                                    			<DisplayType>Button</DisplayType>
-                                    			<Action>CloseWindow</Action>
-                                    			<ParameterId />
-                                            </NodeArc>
-                                        </ArcList>
+                                        <Data>Please enter your password!</Data>
+										<ArcList>
+											<NodeArc>
+												<NextNode>
+													<Data>Thank you for registration!\r\nYour wallet #key#</Data>
+													<ArcList>
+														<NodeArc>
+															<NextNode>
+																<Data>#Data#</Data>
+																<ArcList>
+																	<NodeArc>
+																		<NodeText>Try again!</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<Action>Restart</Action>
+																		<ParameterId />
+																	</NodeArc>
+																</ArcList>
+															</NextNode>
+															<NodeText>Finish!</NodeText>
+															<DisplayType>Button</DisplayType>
+															<Action>CloseWindow</Action>
+															<ParameterId />
+														</NodeArc>
+													</ArcList>
+												</NextNode>
+												<NodeText>Password</NodeText>
+			            						<DisplayType>TextBox</DisplayType>
+												<Url>http://maxdata.webmakom.com/storage/?method=login_user</Url>
+			            						<Action>Register/CreateWallet</Action>
+			            						<ParameterId>pass</ParameterId>
+											</NodeArc>
+										</ArcList>
                                     </NextNode>
                                     <NodeText>Email address</NodeText>
             						<DisplayType>TextBox</DisplayType>
-            						<Action>Register</Action>
-            						<Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
+            						<Action>SaveData</Action>
             						<ParameterId>email</ParameterId>
                                 </NodeArc>
                             </ArcList>
                         </NextNode>
                         <NodeText>Yes! Let's do this!</NodeText>
             			<DisplayType>Button</DisplayType>
-                        <Action>CreateWallet</Action>
+                        <Action>Next</Action>
             			<ParameterId />
                     </NodeArc>
                     <NodeArc>
