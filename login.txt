@@ -18,6 +18,7 @@
 										<ArcList>
 											<NodeArc>
 												<NextNode>
+													<Data>Success!</Data>
 													<ArcList>
 														<NodeArc>
 															<NextNode>
