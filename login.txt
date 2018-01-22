@@ -111,7 +111,7 @@
 									<NodeText>Private key</NodeText>
 									<DisplayType>TextBox</DisplayType>
 									<Action>SaveData</Action>
-									<ParameterId>public</ParameterId>
+									<ParameterId>private</ParameterId>
 								</NodeArc>
 							</ArcList>
 						</NextNode>
