@@ -43,7 +43,7 @@
 												<DisplayType>TextBox</DisplayType>
 												<Action>Login</Action>
 												<Url>http://maxdata.webmakom.com/storage/?method=login_user</Url>
-												<ParameterId>password</ParameterId>
+												<ParameterId>pass</ParameterId>
 											</NodeArc>
 										</ArcList>
 									</NextNode>
