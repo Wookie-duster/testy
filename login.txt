@@ -73,7 +73,7 @@
 													<ArcList>
 														<NodeArc>
 															<NextNode>
-																<ArcList>
+		<Data>Success!</Data>														<ArcList>
 						                                            <NodeArc>
 						                                                <NextNode>
 						                                                    <Data>#Data#</Data>
