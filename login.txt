@@ -166,7 +166,7 @@
 												</NextNode>
 												<NodeText>Password</NodeText>
 			            						<DisplayType>TextBox</DisplayType>
-												<Url>http://maxdata.webmakom.com/storage/?method=login_user</Url>
+												<Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
 			            						<Action>Register</Action>
 			            						<ParameterId>pass</ParameterId>
 											</NodeArc>
