@@ -97,7 +97,7 @@
 															<DisplayType>TextBox</DisplayType>
 															<Action>Register</Action>
 															<Url>http://maxdata.webmakom.com/storage/?method=register_user</Url>
-															<ParameterId>password</ParameterId>
+															<ParameterId>pass</ParameterId>
 														</NodeArc>
 													</ArcList>
 												</NextNode>
