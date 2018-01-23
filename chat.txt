@@ -1,278 +1,281 @@
 <?xml version="1.0"?>
-<ChatNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Data>Hi, whats your name?</Data>
-  <ArcList>
-    <NodeArc>
-      <NextNode>
-        <Data>Hi #name#, glad to meet you.\r\nWould you like to hear about our Internet offer?</Data>
-        <ArcList>
-          <NodeArc>
-            <NextNode>
-              <Data>Great.\r\nLets try to figure out what kind of service do you need.\r\nWhat is the purpose of this service?</Data>
-              <ArcList>
-                <NodeArc>
-                  <NextNode>
-                    <Data>Do you consider yourself a speed freek?</Data>
-                    <ArcList>
-                      <NodeArc>
-                        <NextNode>
-                          <Data>In that case we have a super fast 100MB connection.\r\nCould this interest you?</Data>
-                          <ArcList>
-                            <NodeArc>
-                              <NextNode>
-                                <Data>Great!.\r\nIt comes with 2MB donwload connection and a strong router with wifi.</Data>
-                                <ArcList>
-                                  <NodeArc>
-                                    <NextNode>
-                                      <Data>Looks like we're done.\r\nWoudl you like me to publish this request</Data>
-                                      <ArcList>
-                                        <NodeArc>
-                                          <NextNode>
-                                            <Data>Sending it now. lets ses what we have.....</Data>
-                                            <ArcList>
-                                              <NodeArc>
-                                                <NodeText>#WaitForProposal#</NodeText>
-                                                <DisplayType>Status</DisplayType>
-                                                <ParameterId>#WaitForProposal#</ParameterId>
-                                                <ParameterValue>#WaitForProposal#</ParameterValue>
-                                              </NodeArc>
-                                            </ArcList>
-                                          </NextNode>
-                                          <NodeText>Sure</NodeText>
-                                          <DisplayType>Button</DisplayType>
-                                        </NodeArc>
-                                      </ArcList>
-                                    </NextNode>
-                                    <NodeText>Works for me!!</NodeText>
-                                    <DisplayType>Button</DisplayType>
-                                    <ParameterId>Wifi</ParameterId>
-                                    <ParameterValue>true</ParameterValue>
-                                    <Action>Next</Action>
-                                  </NodeArc>
-                                  <NodeArc>
-                                    <NextNode>
-                                      <Data>Its a great device, it will surly upgrade your browsing experience</Data>
-                                      <ArcList>
-                                        <NodeArc>
-                                          <NextNode>
-                                            <Data>Looks like we're done. woudl you like me to publish this request</Data>
-                                            <ArcList>
-                                              <NodeArc>
-                                                <NextNode>
-                                                  <Data>Sending it now. lets ses what we have.....</Data>
-                                                  <ArcList>
-                                                    <NodeArc>
-                                                      <NodeText>#WaitForProposal#</NodeText>
-                                                      <DisplayType>Status</DisplayType>
-                                                    </NodeArc>
-                                                  </ArcList>
-                                                </NextNode>
-                                                <NodeText>Yeah, lets go.</NodeText>
-                                                <DisplayType>Button</DisplayType>
-                                                <Action>Next</Action>
-                                              </NodeArc>
-                                            </ArcList>
-                                          </NextNode>
-                                          <NodeText>OK,</NodeText>
-                                          <DisplayType>Button</DisplayType>
-                                          <ParameterId>Wifi</ParameterId>
-                                          <ParameterValue>true</ParameterValue>
-                                          <Action>Next</Action>
-                                        </NodeArc>
-                                        <NodeArc>
-                                          <NextNode>
-                                            <Data>Looks like we're done.\r\nWould you like me to publish this request</Data>
-                                            <ArcList>
-                                              <NodeArc>
-                                                <NextNode>
-                                                  <Data>Sending it now. lets ses what we have.....</Data>
-                                                  <ArcList>
-                                                    <NodeArc>
-                                                      <NodeText>#WaitForProposal#</NodeText>
-                                                      <DisplayType>Status</DisplayType>
-                                                    </NodeArc>
-                                                  </ArcList>
-                                                </NextNode>
-                                                <NodeText>Sure</NodeText>
-                                                <DisplayType>TextBox</DisplayType>
-                                                <Action>Next</Action>
-                                              </NodeArc>
-                                            </ArcList>
-                                          </NextNode>
-                                          <NodeText>No need, lets continue</NodeText>
-                                          <DisplayType>Button</DisplayType>
-                                          <ParameterId>Wifi</ParameterId>
-                                          <ParameterValue>false</ParameterValue>
-                                          <Action>Next</Action>
-                                        </NodeArc>
-                                      </ArcList>
-                                    </NextNode>
-                                    <NodeText>Not sure about  the router</NodeText>
-                                    <DisplayType>Button</DisplayType>
-                                    <ParameterId />
-                                    <ParameterValue />
-                                    <Action>Next</Action>
-                                  </NodeArc>
-                                </ArcList>
-                              </NextNode>
-                              <NodeText>Hell yeah</NodeText>
-                              <DisplayType>Button</DisplayType>
-                              <ParameterId>DownloadSpeed</ParameterId>
-                              <ParameterValue>100</ParameterValue>
-                              <Action>Next</Action>
-                            </NodeArc>
-                            <NodeArc>
-                              <NextNode>
-                                <Data>Theres 40MB and 20MB download speed,\r\nIs that enough?</Data>
-                                <ArcList>
-                                  <NodeArc>
-                                    <NodeText>40MB wil do the trick</NodeText>
-                                    <DisplayType>Button</DisplayType>
-                                    <ParameterId>DownloadSpeed</ParameterId>
-                                    <ParameterValue>40</ParameterValue>
-                                  </NodeArc>
-                                  <NodeArc>
-                                    <NodeText>20MB is enough for me</NodeText>
-                                    <DisplayType>Button</DisplayType>
-                                    <ParameterId>DownloadSpeed</ParameterId>
-                                    <ParameterValue>20</ParameterValue>
-                                  </NodeArc>
-                                </ArcList>
-                              </NextNode>
-                              <NodeText>Not sure, whats the next speed level?</NodeText>
-                              <DisplayType>Button</DisplayType>
-                              <ParameterId />
-                              <ParameterValue />
-                            </NodeArc>
-                          </ArcList>
-                        </NextNode>
-                        <NodeText>Yes</NodeText>
-                        <DisplayType>Button</DisplayType>
-                        <ParameterId>UploadSpeed</ParameterId>
-                        <ParameterValue>2</ParameterValue>
-                        <Action>Next</Action>
-                      </NodeArc>
-                      <NodeArc>
-                        <NextNode>
-                          <Data>Could 40MB download speed interest you or you think even 20MB would do the trick</Data>
-                          <ArcList>
-                            <NodeArc>
-                              <NextNode>
-                                <Data>than 40MB it is, it comes with 2 MB download speed, Do you own a Wifi router or would you like us to privude onw for you?</Data>
-                                <ArcList>
-                                  <NodeArc>
-                                    <NodeText>already have one</NodeText>
-                                    <DisplayType>Button</DisplayType>
-                                    <ParameterId>Wifi</ParameterId>
-                                    <ParameterValue>false</ParameterValue>
-                                    <Action>CloseWindow</Action>
-                                  </NodeArc>
-                                  <NodeArc>
-                                    <NextNode>
-                                      <Data>Its a great device, it will surly upgrade your browsing experience. Looks like we're done. Woudl you like me to publish this information on our network?</Data>
-                                      <ArcList>
-                                        <NodeArc>
-                                          <NextNode>
-                                            <Data>Sending it now. lets ses what we have.....</Data>
-                                            <ArcList>
-                                              <NodeArc>
-                                                <NodeText>#WaitForProposal#</NodeText>
-                                                <DisplayType>Status</DisplayType>
-                                                <ParameterId>#WaitForProposal#</ParameterId>
-                                                <ParameterValue />
-                                              </NodeArc>
-                                            </ArcList>
-                                          </NextNode>
-                                          <NodeText>Lets go</NodeText>
-                                          <DisplayType>Button</DisplayType>
-                                          <ParameterId />
-                                          <Action>Next</Action>
-                                        </NodeArc>
-                                        <NodeArc>
-                                          <NodeText>Im afraid ill be harrsed....</NodeText>
-                                          <DisplayType>Button</DisplayType>
-                                          <Action>CloseWindow</Action>
-                                        </NodeArc>
-                                      </ArcList>
-                                    </NextNode>
-                                    <NodeText>Need a touter</NodeText>
-                                    <DisplayType>Button</DisplayType>
-                                    <ParameterId>Wifi</ParameterId>
-                                    <ParameterValue>true</ParameterValue>
-                                    <Action>Next</Action>
-                                  </NodeArc>
-                                </ArcList>
-                              </NextNode>
-                              <NodeText>40MB</NodeText>
-                              <DisplayType>Button</DisplayType>
-                              <ParameterId>DownloadSpeed</ParameterId>
-                              <ParameterValue>40</ParameterValue>
-                              <Action>Next</Action>
-                            </NodeArc>
-                            <NodeArc>
-                              <NextNode>
-                                <Data>than 20MB it is, it comes with 2 MB download speed, Do you own a Wifi router or would you like us to privude onw for you?</Data>
-                                <ArcList>
-                                  <NodeArc>
-                                    <NodeText>already have one</NodeText>
-                                    <DisplayType>TextBox</DisplayType>
-                                    <ParameterId>Wifi</ParameterId>
-                                    <ParameterValue>false</ParameterValue>
-                                  </NodeArc>
-                                  <NodeArc>
-                                    <NodeText>Need  a touter</NodeText>
-                                    <DisplayType>TextBox</DisplayType>
-                                    <ParameterId>Wifi</ParameterId>
-                                    <ParameterValue>true</ParameterValue>
-                                  </NodeArc>
-                                </ArcList>
-                              </NextNode>
-                              <NodeText>20MB</NodeText>
-                              <DisplayType>Button</DisplayType>
-                              <ParameterId>DownloadSpeed</ParameterId>
-                              <ParameterValue />
-                              <Action>Next</Action>
-                            </NodeArc>
-                          </ArcList>
-                        </NextNode>
-                        <NodeText>Not really</NodeText>
-                        <DisplayType>Button</DisplayType>
-                        <ParameterId>UploadSpeed</ParameterId>
-                        <ParameterValue>2</ParameterValue>
-                        <Action>Next</Action>
-                      </NodeArc>
-                    </ArcList>
-                  </NextNode>
-                  <NodeText>Home</NodeText>
-                  <DisplayType>Button</DisplayType>
-                  <ParameterId>home</ParameterId>
-                  <Action>Next</Action>
-                </NodeArc>
-                <NodeArc>
-                  <NodeText>Office</NodeText>
-                  <DisplayType>Button</DisplayType>
-                  <ParameterId>office</ParameterId>
-                  <Action>Next</Action>
-                </NodeArc>
-              </ArcList>
-            </NextNode>
-            <NodeText>Yes Please!</NodeText>
-            <DisplayType>Button</DisplayType>
-            <ParameterId>Yes</ParameterId>
-            <Action>Next</Action>
-          </NodeArc>
-          <NodeArc>
-            <NodeText>What is it about?</NodeText>
-            <DisplayType>Button</DisplayType>
-            <ParameterId>later</ParameterId>
-            <Action>CloseWindow</Action>
-          </NodeArc>
-        </ArcList>
-      </NextNode>
-      <NodeText>your name</NodeText>
-      <DisplayType>TextBox</DisplayType>
-      <ParameterId>name</ParameterId>
-      <Action>Next</Action>
-    </NodeArc>
-  </ArcList>
+<ChatNode
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Data>Hi, whats your name?</Data>
+	<ArcList>
+		<NodeArc>
+			<NextNode>
+				<Data>Hi #name#, glad to meet you.\r\nWould you like to hear about our Internet offer?</Data>
+				<ArcList>
+					<NodeArc>
+						<NextNode>
+							<Data>Great.\r\nLets try to figure out what kind of service do you need.\r\nWhat is the purpose of this service?</Data>
+							<ArcList>
+								<NodeArc>
+									<NextNode>
+										<Data>Do you consider yourself a speed freek?</Data>
+										<ArcList>
+											<NodeArc>
+												<NextNode>
+													<Data>In that case we have a super fast 100MB connection.\r\nCould this interest you?</Data>
+													<ArcList>
+														<NodeArc>
+															<NextNode>
+																<Data>Great!.\r\nIt comes with 2MB donwload connection and a strong router with wifi.</Data>
+																<ArcList>
+																	<NodeArc>
+																		<NextNode>
+																			<Data>Looks like we're done.\r\nWoudl you like me to publish this request</Data>
+																			<ArcList>
+																				<NodeArc>
+																					<NextNode>
+																						<Data>Sending it now. lets ses what we have.....</Data>
+																						<ArcList>
+																							<NodeArc>
+																								<NodeText>#WaitForProposal#</NodeText>
+																								<DisplayType>Status</DisplayType>
+																								<ParameterId>#WaitForProposal#</ParameterId>
+																								<ParameterValue>#WaitForProposal#</ParameterValue>
+																							</NodeArc>
+																						</ArcList>
+																					</NextNode>
+																					<NodeText>Sure</NodeText>
+																					<DisplayType>Button</DisplayType>
+																				</NodeArc>
+																			</ArcList>
+																		</NextNode>
+																		<NodeText>Works for me!!</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<ParameterId>Wifi</ParameterId>
+																		<ParameterValue>true</ParameterValue>
+																		<Action>Next</Action>
+																	</NodeArc>
+																	<NodeArc>
+																		<NextNode>
+																			<Data>Its a great device, it will surly upgrade your browsing experience</Data>
+																			<ArcList>
+																				<NodeArc>
+																					<NextNode>
+																						<Data>Looks like we're done. woudl you like me to publish this request</Data>
+																						<ArcList>
+																							<NodeArc>
+																								<NextNode>
+																									<Data>Sending it now. lets ses what we have.....</Data>
+																									<ArcList>
+																										<NodeArc>
+																											<NodeText>#WaitForProposal#</NodeText>
+																											<DisplayType>Status</DisplayType>
+																										</NodeArc>
+																									</ArcList>
+																								</NextNode>
+																								<NodeText>Yeah, lets go.</NodeText>
+																								<DisplayType>Button</DisplayType>
+																								<Action>Next</Action>
+																							</NodeArc>
+																						</ArcList>
+																					</NextNode>
+																					<NodeText>OK,</NodeText>
+																					<DisplayType>Button</DisplayType>
+																					<ParameterId>Wifi</ParameterId>
+																					<ParameterValue>true</ParameterValue>
+																					<Action>Next</Action>
+																				</NodeArc>
+																				<NodeArc>
+																					<NextNode>
+																						<Data>Looks like we're done.\r\nWould you like me to publish this request</Data>
+																						<ArcList>
+																							<NodeArc>
+																								<NextNode>
+																									<Data>Sending it now. lets ses what we have.....</Data>
+																									<ArcList>
+																										<NodeArc>
+																											<NodeText>#WaitForProposal#</NodeText>
+																											<DisplayType>Status</DisplayType>
+																										</NodeArc>
+																									</ArcList>
+																								</NextNode>
+																								<NodeText>Sure</NodeText>
+																								<DisplayType>TextBox</DisplayType>
+																								<Action>Next</Action>
+																							</NodeArc>
+																						</ArcList>
+																					</NextNode>
+																					<NodeText>No need, lets continue</NodeText>
+																					<DisplayType>Button</DisplayType>
+																					<ParameterId>Wifi</ParameterId>
+																					<ParameterValue>false</ParameterValue>
+																					<Action>Next</Action>
+																				</NodeArc>
+																			</ArcList>
+																		</NextNode>
+																		<NodeText>Not sure about  the router</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<ParameterId />
+																		<ParameterValue />
+																		<Action>Next</Action>
+																	</NodeArc>
+																</ArcList>
+															</NextNode>
+															<NodeText>Hell yeah</NodeText>
+															<DisplayType>Button</DisplayType>
+															<ParameterId>DownloadSpeed</ParameterId>
+															<ParameterValue>100</ParameterValue>
+															<Action>Next</Action>
+														</NodeArc>
+														<NodeArc>
+															<NextNode>
+																<Data>Theres 40MB and 20MB download speed,\r\nIs that enough?</Data>
+																<ArcList>
+																	<NodeArc>
+																		<NodeText>40MB wil do the trick</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<ParameterId>DownloadSpeed</ParameterId>
+																		<ParameterValue>40</ParameterValue>
+																	</NodeArc>
+																	<NodeArc>
+																		<NodeText>20MB is enough for me</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<ParameterId>DownloadSpeed</ParameterId>
+																		<ParameterValue>20</ParameterValue>
+																	</NodeArc>
+																</ArcList>
+															</NextNode>
+															<NodeText>Not sure, whats the next speed level?</NodeText>
+															<DisplayType>Button</DisplayType>
+                                                            <Action>Next</Action>
+															<ParameterId />
+															<ParameterValue />
+														</NodeArc>
+													</ArcList>
+												</NextNode>
+												<NodeText>Yes</NodeText>
+												<DisplayType>Button</DisplayType>
+												<ParameterId>UploadSpeed</ParameterId>
+												<ParameterValue>2</ParameterValue>
+												<Action>Next</Action>
+											</NodeArc>
+											<NodeArc>
+												<NextNode>
+													<Data>Could 40MB download speed interest you or you think even 20MB would do the trick</Data>
+													<ArcList>
+														<NodeArc>
+															<NextNode>
+																<Data>than 40MB it is, it comes with 2 MB download speed, Do you own a Wifi router or would you like us to privude onw for you?</Data>
+																<ArcList>
+																	<NodeArc>
+																		<NodeText>already have one</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<ParameterId>Wifi</ParameterId>
+																		<ParameterValue>false</ParameterValue>
+																		<Action>CloseWindow</Action>
+																	</NodeArc>
+																	<NodeArc>
+																		<NextNode>
+																			<Data>Its a great device, it will surly upgrade your browsing experience. Looks like we're done. Woudl you like me to publish this information on our network?</Data>
+																			<ArcList>
+																				<NodeArc>
+																					<NextNode>
+																						<Data>Sending it now. lets ses what we have.....</Data>
+																						<ArcList>
+																							<NodeArc>
+																								<NodeText>#WaitForProposal#</NodeText>
+																								<DisplayType>Status</DisplayType>
+																								<ParameterId>#WaitForProposal#</ParameterId>
+																								<ParameterValue />
+																							</NodeArc>
+																						</ArcList>
+																					</NextNode>
+																					<NodeText>Lets go</NodeText>
+																					<DisplayType>Button</DisplayType>
+																					<ParameterId />
+																					<Action>Next</Action>
+																				</NodeArc>
+																				<NodeArc>
+																					<NodeText>Im afraid ill be harrsed....</NodeText>
+																					<DisplayType>Button</DisplayType>
+																					<Action>CloseWindow</Action>
+																				</NodeArc>
+																			</ArcList>
+																		</NextNode>
+																		<NodeText>Need a touter</NodeText>
+																		<DisplayType>Button</DisplayType>
+																		<ParameterId>Wifi</ParameterId>
+																		<ParameterValue>true</ParameterValue>
+																		<Action>Next</Action>
+																	</NodeArc>
+																</ArcList>
+															</NextNode>
+															<NodeText>40MB</NodeText>
+															<DisplayType>Button</DisplayType>
+															<ParameterId>DownloadSpeed</ParameterId>
+															<ParameterValue>40</ParameterValue>
+															<Action>Next</Action>
+														</NodeArc>
+														<NodeArc>
+															<NextNode>
+																<Data>than 20MB it is, it comes with 2 MB download speed, Do you own a Wifi router or would you like us to privude onw for you?</Data>
+																<ArcList>
+																	<NodeArc>
+																		<NodeText>already have one</NodeText>
+																		<DisplayType>TextBox</DisplayType>
+																		<ParameterId>Wifi</ParameterId>
+																		<ParameterValue>false</ParameterValue>
+																	</NodeArc>
+																	<NodeArc>
+																		<NodeText>Need  a touter</NodeText>
+																		<DisplayType>TextBox</DisplayType>
+																		<ParameterId>Wifi</ParameterId>
+																		<ParameterValue>true</ParameterValue>
+																	</NodeArc>
+																</ArcList>
+															</NextNode>
+															<NodeText>20MB</NodeText>
+															<DisplayType>Button</DisplayType>
+															<ParameterId>DownloadSpeed</ParameterId>
+															<ParameterValue />
+															<Action>Next</Action>
+														</NodeArc>
+													</ArcList>
+												</NextNode>
+												<NodeText>Not really</NodeText>
+												<DisplayType>Button</DisplayType>
+												<ParameterId>UploadSpeed</ParameterId>
+												<ParameterValue>2</ParameterValue>
+												<Action>Next</Action>
+											</NodeArc>
+										</ArcList>
+									</NextNode>
+									<NodeText>Home</NodeText>
+									<DisplayType>Button</DisplayType>
+									<ParameterId>home</ParameterId>
+									<Action>Next</Action>
+								</NodeArc>
+								<NodeArc>
+									<NodeText>Office</NodeText>
+									<DisplayType>Button</DisplayType>
+									<ParameterId>office</ParameterId>
+									<Action>Jump</Action>
+								</NodeArc>
+							</ArcList>
+						</NextNode>
+						<NodeText>Yes Please!</NodeText>
+						<DisplayType>Button</DisplayType>
+						<ParameterId>Yes</ParameterId>
+						<Action>Next</Action>
+					</NodeArc>
+					<NodeArc>
+						<NodeText>What is it about?</NodeText>
+						<DisplayType>Button</DisplayType>
+						<ParameterId>later</ParameterId>
+						<Action>CloseWindow</Action>
+					</NodeArc>
+				</ArcList>
+			</NextNode>
+			<NodeText>your name</NodeText>
+			<DisplayType>TextBox</DisplayType>
+			<ParameterId>name</ParameterId>
+			<Action>Next</Action>
+		</NodeArc>
+	</ArcList>
 </ChatNode>
