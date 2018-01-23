@@ -73,7 +73,8 @@
 																								</NextNode>
 																								<NodeText>Yeah, lets go.</NodeText>
 																								<DisplayType>Button</DisplayType>
-																								<Action>Next</Action>
+                                                                                                <Action>FormData</Action>
+                                                                                                <Url>http://maxdata.webmakom.com/storage/?method=save_data</Url>
 																							</NodeArc>
 																						</ArcList>
 																					</NextNode>
