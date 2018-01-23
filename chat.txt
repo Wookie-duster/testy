@@ -175,7 +175,8 @@
 																		<DisplayType>Button</DisplayType>
 																		<ParameterId>Wifi</ParameterId>
 																		<ParameterValue>false</ParameterValue>
-																		<Action>SaveData</Action>
+                                                                        <Action>FormData</Action>
+                                                                        <Url>http://maxdata.webmakom.com/storage/?method=save_data</Url>
 																	</NodeArc>
 																	<NodeArc>
 																		<NextNode>
