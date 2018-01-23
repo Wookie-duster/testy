@@ -42,6 +42,8 @@
 																					</NextNode>
 																					<NodeText>Sure</NodeText>
 																					<DisplayType>Button</DisplayType>
+                                                                                    <Action>FormData</Action>
+                                                                                    <Url>http://maxdata.webmakom.com/storage/?method=save_data&collection=rfp</Url>
 																				</NodeArc>
 																			</ArcList>
 																		</NextNode>
@@ -97,7 +99,8 @@
 																								</NextNode>
 																								<NodeText>Sure</NodeText>
 																								<DisplayType>TextBox</DisplayType>
-																								<Action>Next</Action>
+                                                                                                <Action>FormData</Action>
+                                                                                                <Url>http://maxdata.webmakom.com/storage/?method=save_data&collection=rfp</Url>
 																							</NodeArc>
 																						</ArcList>
 																					</NextNode>
@@ -132,14 +135,16 @@
 																		<DisplayType>Button</DisplayType>
 																		<ParameterId>DownloadSpeed</ParameterId>
 																		<ParameterValue>40</ParameterValue>
-                                                                        <Action>SaveData</Action>
+                                                                        <Action>FormData</Action>
+                                                                        <Url>http://maxdata.webmakom.com/storage/?method=save_data&collection=rfp</Url>
 																	</NodeArc>
 																	<NodeArc>
 																		<NodeText>20MB is enough for me</NodeText>
 																		<DisplayType>Button</DisplayType>
 																		<ParameterId>DownloadSpeed</ParameterId>
 																		<ParameterValue>20</ParameterValue>
-                                                                        <Action>SaveData</Action>
+                                                                        <Action>FormData</Action>
+                                                                        <Url>http://maxdata.webmakom.com/storage/?method=save_data&collection=rfp</Url>
 																	</NodeArc>
 																</ArcList>
 															</NextNode>
@@ -191,7 +196,8 @@
 																					<NodeText>Lets go</NodeText>
 																					<DisplayType>Button</DisplayType>
 																					<ParameterId />
-																					<Action>Next</Action>
+                                                                                    <Action>FormData</Action>
+                                                                                    <Url>http://maxdata.webmakom.com/storage/?method=save_data&collection=rfp</Url>
 																				</NodeArc>
 																				<NodeArc>
 																					<NodeText>Im afraid ill be harrsed....</NodeText>
@@ -223,14 +229,16 @@
 																		<DisplayType>TextBox</DisplayType>
 																		<ParameterId>Wifi</ParameterId>
 																		<ParameterValue>false</ParameterValue>
-                                                                        <Action>SaveData</Action>
+                                                                        <Action>FormData</Action>
+                                                                        <Url>http://maxdata.webmakom.com/storage/?method=save_data&collection=rfp</Url>
 																	</NodeArc>
 																	<NodeArc>
 																		<NodeText>Need  a touter</NodeText>
 																		<DisplayType>TextBox</DisplayType>
 																		<ParameterId>Wifi</ParameterId>
 																		<ParameterValue>true</ParameterValue>
-                                                                        <Action>SaveData</Action>
+                                                                        <Action>FormData</Action>
+                                                                        <Url>http://maxdata.webmakom.com/storage/?method=save_data&collection=rfp</Url>
 																	</NodeArc>
 																</ArcList>
 															</NextNode>
